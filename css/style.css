@@ -112,6 +112,11 @@ text-decoration: none;
     background-color: var(--hero-bg-color);
     text-align: center;
     padding: 188px;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .header-content {
     width: 496px;
@@ -276,8 +281,9 @@ line-height: 1.5;
 }
 /* Portfolio */
 .filtr-btn {
-    margin-top: 0;
-    margin-bottom: 72px;
+    display: flex;
+   margin: auto;
+   justify-content: center;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -295,6 +301,14 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 cursor: pointer;
+}
+.list-button {
+    margin-right: 24px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+.list-button:nth-child(5) {
+    margin-right: 0;
 }
 .portfolio-list {
     display: flex;
