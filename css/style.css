@@ -21,12 +21,6 @@
 .main-nav {
     display: flex;
     align-items: center;
-
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 .container {
     width: 1158px;
@@ -35,7 +29,7 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-.container.main-nav {
+.container .main-nav {
     display: flex;
     align-items: center;
 }
@@ -70,13 +64,13 @@ font-size: 16px;
 line-height: 1.5;
 text-decoration: none;
 }
-.site-nav {
+.site-nav-list {
     padding: 0;
     margin: 0;
     display: flex;
     margin-left: 76px;
 }
-.site-nav .item + .item {
+.link{
     margin-left: 40px;
 }
 .site-nav :hover, 
@@ -93,10 +87,14 @@ font-size: 16px;
 line-height: 1.5;
 text-decoration: none;
 }
+address {
+    margin-left: auto;
+}
 .address-nav {
     display: flex;
     padding: 0;
     margin-left: auto;
+    margin: 0;
 }
 .address-nav .item + .item{
     margin-left: 40px;
@@ -111,12 +109,7 @@ text-decoration: none;
 .hero {
     background-color: var(--hero-bg-color);
     text-align: center;
-    padding: 188px;
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 188px 0;
 }
 .header-content {
     width: 496px;
@@ -147,8 +140,8 @@ line-height: 1.5;
 cursor: pointer;
 }
 .section {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .visually-hiden {
     position: absolute;
@@ -164,8 +157,9 @@ cursor: pointer;
 }
 .section-one-list {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
 }
 .section-title {
     margin-top: 0;
@@ -182,8 +176,7 @@ font-size: 16px;
 line-height: 1.5;
 }
 .doing {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 0;
 } 
 .doing-list {
     display: flex;
@@ -221,12 +214,15 @@ font-size: 36px;
 line-height: 1.1;
 text-align: center;
 }
+.team-card {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--second-bg-color);
+    align-items: center;
+}
 .team-list {
     display: flex;
-    margin-bottom: 120px;
-}
-.team-list img {
-    margin-bottom: 32px;
+    gap: 24px;
 }
 .all-team {
     margin-right: 24px;
@@ -240,8 +236,6 @@ font-size: 20px;
 line-height: 1.2;
 }
 .team-work {
-    margin-top: 8px;
-    margin-bottom: 32px;
 font-size: 16px;
 line-height: 1.5;
 }
@@ -252,7 +246,6 @@ line-height: 1.5;
 }
 .footer-link {
     display: inline-block;
-    margin-left: 156px;
     margin-bottom: 16px;
     color: #F4F4FD;
 font-family: Raleway, cursive;
@@ -273,17 +266,22 @@ text-decoration: none;
 .footer-text {
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 156px;
     width: 264px;
     color: var(--accent);
 font-size: 16px;
 line-height: 1.5;
 }
 /* Portfolio */
+.portfolio-section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .filtr-btn {
     display: flex;
    margin: auto;
    justify-content: center;
+   margin-top: 96px;
+    margin-bottom: 72px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -304,8 +302,6 @@ cursor: pointer;
 }
 .list-button {
     margin-right: 24px;
-    margin-top: 96px;
-    margin-bottom: 72px;
 }
 .list-button:nth-child(5) {
     margin-right: 0;
@@ -313,21 +309,24 @@ cursor: pointer;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    width: 1158px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0;
+    margin: 0;
+    gap: 24px;
 }
 .flex-element {
     width: 360px;
-    margin-right: 24px;
 }
 .portfolio-list img {
     margin-bottom: 32px;
 }
 .flex-element:nth-child(3n) {
     margin-right: 0;
+}
+.text-portfolio-img {
+    padding: auto;
+   border: 1px solid var(--accent);
+   padding: 32px 16px;
+   border-top: none;
 }
 .general-text {
     margin-top: 0;
@@ -337,9 +336,11 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 }
+p {
+    margin-bottom: 0;
+}
 .second-portfolio-text {
     margin-top: 0;
-    margin-bottom: 80px;
     color: var(--second-text-color);
 font-size: 16px;
 line-height: 1.5;
