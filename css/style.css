@@ -18,6 +18,10 @@
     font-family: Roboto, sans-serif;
     letter-spacing: 0.02em;
 }
+.header {
+    border: 1px solid var(--accent);
+    border-top: none;
+ }
 .main-nav {
     display: flex;
     align-items: center;
@@ -67,11 +71,9 @@ text-decoration: none;
 .site-nav-list {
     padding: 0;
     margin: 0;
+    gap: 40px;
     display: flex;
     margin-left: 76px;
-}
-.link{
-    margin-left: 40px;
 }
 .site-nav :hover, 
 .site-nav :focus {
@@ -177,15 +179,16 @@ line-height: 1.5;
 }
 .doing {
     padding-top: 0;
+    margin-bottom: 120px;
 } 
 .doing-list {
     display: flex;
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
 }
 .doing-list img{
-    margin-right: 24px;
+    display: block;
 }
 .last-picture img {
     margin-right: 0;
@@ -215,17 +218,14 @@ line-height: 1.1;
 text-align: center;
 }
 .team-card {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
     background-color: var(--second-bg-color);
-    align-items: center;
+    text-align: center;
 }
 .team-list {
     display: flex;
     gap: 24px;
-}
-.all-team {
-    margin-right: 24px;
 }
 .team-name {
     margin-top: 0;
@@ -273,15 +273,14 @@ line-height: 1.5;
 }
 /* Portfolio */
 .portfolio-section {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 96px;
+    padding-bottom: 72px;
 }
 .filtr-btn {
     display: flex;
    margin: auto;
    justify-content: center;
-   margin-top: 96px;
-    margin-bottom: 72px;
+   padding-bottom: 72px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -311,13 +310,10 @@ cursor: pointer;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    gap: 24px;
+    gap: 48px 24px;
 }
 .flex-element {
     width: 360px;
-}
-.portfolio-list img {
-    margin-bottom: 32px;
 }
 .flex-element:nth-child(3n) {
     margin-right: 0;
@@ -344,9 +340,6 @@ p {
     color: var(--second-text-color);
 font-size: 16px;
 line-height: 1.5;
-}
-.flex-element:nth-last-child(-n + 3) {
-    margin-bottom: 152px;
 }
 .name {
     margin-bottom: 0;
