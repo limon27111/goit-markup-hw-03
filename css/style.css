@@ -179,7 +179,7 @@ line-height: 1.5;
 }
 .doing {
     padding-top: 0;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 } 
 .doing-list {
     display: flex;
@@ -202,6 +202,11 @@ line-height: 1.5;
     text-align: center;
     text-transform: capitalize;
 }
+.all-team img {
+display: block;
+max-width: 100%;
+height: auto;
+}
 .team {
     margin-top: 0;
     margin-bottom: 0;
@@ -222,6 +227,7 @@ text-align: center;
     padding-bottom: 32px;
     background-color: var(--second-bg-color);
     text-align: center;
+    background-color: var(--btn-text-color-active);
 }
 .team-list {
     display: flex;
@@ -238,6 +244,7 @@ line-height: 1.2;
 .team-work {
 font-size: 16px;
 line-height: 1.5;
+margin: 0;
 }
 .footer {
     padding-top: 100px;
@@ -274,13 +281,14 @@ line-height: 1.5;
 /* Portfolio */
 .portfolio-section {
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 120px;
 }
 .filtr-btn {
     display: flex;
-   margin: auto;
+   margin: 0;
+   padding: 0;
    justify-content: center;
-   padding-bottom: 72px;
+   margin-bottom: 72px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
